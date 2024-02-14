@@ -1,0 +1,12 @@
+data_lake_modelos_semanticos:
+  outputs:
+    dev:
+      dbname: dev
+      host: mygroupworktest1.992382490306.us-east-1.redshift-serverless.amazonaws.com
+      password: th1s1sANEx&mpl3
+      port: 5439
+      schema: dbt
+      threads: 1
+      type: redshift
+      user: etl_user
+  target: dev

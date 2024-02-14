@@ -1,0 +1,45 @@
+version: 2
+
+sources:
+  - name: contraloria
+    database: dev
+    schema: dbt_stg
+    loader: S3
+    tables:
+      - name: gs_booking_additional
+        external:
+          location: "s3://test-inventario/test_parquets/"
+        columns:
+          - name: id
+            data_type: varchar(255)
+            description: "id"
+          - name: gs_booking_id
+            data_type: varchar(255)
+            description: "gs_booking_id"
+          - name: pms_id
+            data_type: varchar(255)
+            description: "pms_id"
+          - name: room_category
+            data_type: varchar(255)
+            description: "room_category"
+          - name: room_category_pms
+            data_type: varchar(255)
+            description: "room_category_pms"
+          - name: booking_status
+            data_type: varchar(255)
+            description: "booking_status"
+          - name: active
+            data_type: varchar(255)
+            description: "active"
+          - name: created_by
+            data_type: varchar(255)
+            description: "created_by"
+          - name: created_at
+            data_type: varchar(255)
+            description: "created_at"
+          - name: updated_at
+            data_type: varchar(255)
+            description: "updated_at"
+          - name: ingested_date
+            data_type: varchar(255)
+            description: "ingested_date"
