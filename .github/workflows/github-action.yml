@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          script: cd ~/dbt && cd $(ls) && git checkout qa && git pull origin qa && dbt --version
+          script: cd ~/dbt && cd $(ls) && git checkout qa && git pull origin qa && python3 --version
