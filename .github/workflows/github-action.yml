@@ -27,4 +27,5 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          script: whoami
+          source: "/"
+          target: "~/dbt"
