@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          script: cd ~/dbt && cd $(ls | awk '{print $1}' | head -n1) && git checkout qa && git pull origin qa && source ../venv/bin/activate && pip install -r req.txt && dbt run
+          script: cd ~/dbt && cd $(ls | awk '{print $1}' | head -n1) && git checkout qa && git pull origin qa && source ../venv/bin/activate && pip install -r req.txt && dbt run --profiles-dir ./  --models intermediate.*
