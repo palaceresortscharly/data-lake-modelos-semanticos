@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          script: cd ~/dbt && git clone https://{{secrets.P_ACCESS_T}}@{{secrets.URL_REPO}} && git checkout qa && dbt--version
+          script: cd ~/dbt && git clone https://${{ secrets.P_ACCESS_T }}@${{ secrets.URL_REPO }} && git checkout qa && dbt--version
