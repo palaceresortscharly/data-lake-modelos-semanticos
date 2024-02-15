@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          script: cd ~/dbt && cd $(ls | awk '{print $1}' | head -n1) && pip list
+          script: cd ~/dbt && cd $(ls | awk '{print $1}' | head -n1) && source ../venv/bin/activate && pip list
