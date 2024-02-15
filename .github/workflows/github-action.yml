@@ -31,6 +31,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "cloning repository"
-          git clone git clone https://github.com/palaceresortscharly/data-lake-modelos-semanticos.git
+          git clone https://github.com/palaceresortscharly/data-lake-modelos-semanticos.git
           echo "check reposiotry directory"
           ls -lta
