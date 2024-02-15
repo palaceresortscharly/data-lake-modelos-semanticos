@@ -31,4 +31,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "cloning repository"
-          git branch --show-current
+          ls -lta
