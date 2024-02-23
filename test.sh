@@ -14,6 +14,7 @@ else
     echo "dbt run falló."
     aws sns publish --topic-arn arn:aws:sns:us-east-1:992382490306:mi-tema  --message "$out_put" --subject "dbt run falló" --profile AdministratorAccess-992382490306
 
+
     exit 1
 fi
 
