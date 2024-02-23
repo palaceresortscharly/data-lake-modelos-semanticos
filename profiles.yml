@@ -7,6 +7,7 @@ data_lake_modelos_semanticos:
       port: 5439
       schema: dbt
       threads: 1
+      #connect_timeout: 20
       type: redshift
       user: etl_user
   target: dev

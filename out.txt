@@ -1,0 +1,18 @@
+[0m22:23:17  Running with dbt=1.7.7
+[0m22:23:18  Registered adapter: redshift=1.7.3
+[0m22:23:18  Unable to do partial parsing because profile has changed
+[0m22:23:19  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.data_lake_modelos_semanticos.example
+[0m22:23:19  Found 2 models, 1 source, 0 exposures, 0 metrics, 455 macros, 0 groups, 0 semantic models
+[0m22:23:19  
+[0m22:23:40  Concurrency: 1 threads (target='dev')
+[0m22:23:40  
+[0m22:23:40  1 of 1 START sql table model dbt_int_mart.int_gs_booking_additional ............ [RUN]
+[0m22:23:44  1 of 1 OK created sql table model dbt_int_mart.int_gs_booking_additional ....... [[32mSUCCESS[0m in 3.31s]
+[0m22:23:44  
+[0m22:23:44  Finished running 1 table model in 0 hours 0 minutes and 24.93 seconds (24.93s).
+[0m22:23:44  
+[0m22:23:44  [32mCompleted successfully[0m
+[0m22:23:44  
+[0m22:23:44  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
